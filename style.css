@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    /* margin-left: 120px;
+    margin-right: 120px;
+    padding: 20px; */
+    height: 842px;
+    width: 595px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    /* margin-left: 250px; 
+    text-align: center;*/
+    text-decoration: underline;
+    margin-left: 100px;
+}
+
+.photo-placeholder {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: #eee;
+}
+
+.content p {
+    margin: 20px 0;
+    line-height: 1.6;
+    
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.signature, .witnesses {
+    margin-bottom: 20px;
+}
+
+.signature p, .witnesses p {
+    text-align: left;
+    margin: 5px 0;
+    
+}
+.content input{
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.sign {
+    margin-left: 300px;
+}
+@media (min-width: 600px) {
+    .header {
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: center;
+    }
+}

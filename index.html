@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>स्वयंघोषणापत्र</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToPage2() {
+            localStorage.setItem('me', document.getElementById('me').value);
+            localStorage.setItem('shree', document.getElementById('shree').value);
+            localStorage.setItem('age', document.getElementById('age').value);
+            localStorage.setItem('adhar', document.getElementById('adhar').value);
+            localStorage.setItem('designation', document.getElementById('designation').value);
+            localStorage.setItem('address', document.getElementById('address').value);
+            localStorage.setItem('add', document.getElementById('add').value);
+            localStorage.setItem('tq', document.getElementById('tq').value);
+            localStorage.setItem('dist', document.getElementById('dist').value);
+            window.location.href = 'display.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="contain">
+        <div class="header">
+            
+            <h2>हयात असल्याबाबत स्वयंघोषणापत्र</h2>
+           
+        </div>
+        <div class="container">
+            <label>मी :</label>
+            <input type="text" id="me" class="container"><br>
+            <label>श्री. :</label>
+            <input type="text" id="shree" class="container"><br>
+            <label>वय :</label>
+            <input type="text" id="age" class="container"><br>
+            <label>आधार कार्ड क्रमांक :</label>
+            <input type="text" id="adhar" class="container"><br>
+            <label>व्यवसाय :</label>
+            <input type="text" id="designation" class="container"><br>
+            <label>राहणार :</label>
+            <input type="text" id="address" class="container"><br>
+            <label>रा.</label>
+            <input type="text" id="add" class="container"><br>
+            <label>ता.</label>
+            <input type="text" id="tq" class="container"><br>
+            <label>जि.</label>
+            <input type="text" id="dist" class="container"><br>
+            <button onclick="redirectToPage2()">Submit</button>
+        </div>
+    </div>
+    <script>
+         const url=`display.html`;
+    
+    console.log('Form submitted', formData);
+    alert('Form submitted successfully!');
+    </script>
+</body>
+</html>

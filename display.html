@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हयात असलेल्या स्वरुपातील स्वयंघोषणापत्र</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadData() {
+            document.getElementById('me').value = localStorage.getItem('me');
+            document.getElementById('shree').value = localStorage.getItem('shree');
+            document.getElementById('age').value = localStorage.getItem('age');
+            document.getElementById('aadhar').value = localStorage.getItem('adhar');
+            document.getElementById('designation').value = localStorage.getItem('designation');
+            document.getElementById('address').value = localStorage.getItem('address');
+            document.getElementById('add').value = localStorage.getItem('add');
+            document.getElementById('tq').value = localStorage.getItem('tq');
+            document.getElementById('dist').value = localStorage.getItem('dist');
+        }
+    </script>
+</head>
+<body onload="loadData()">
+    <div class="container">
+        <div class="header">
+            <h2>हयात असल्याबाबत स्वयंघोषणापत्र</h2>
+            <div class="photo-placeholder"></div>
+        </div>
+        <div class="content">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<label>मी </label>
+                 <input type="text" id="me" class="content " placeholder="--------------------------------------"> 
+                <label>श्री.</label>
+                <input type="text" id="shree" class="content" placeholder="------------------------------------------------------------------------------------------------------------------"><br>
+            <label>यांचा मुलगा / मुलगी वय</label>
+            <input type="text" id="age" class="content" placeholder="---------------------------------------------------------"><label>वर्षे, आधार कार्ड क्रमांक</label><input type="text" id="aadhar" class="content" placeholder="---------------------------------------------------------">
+            <label> व्यवसाय</label>
+            <input type="text" id="designation" class="content" placeholder="---------------------------------------------------------"> &nbsp;&nbsp;&nbsp;<label>राहणार</label><input type="text" id="address" class="content" placeholder="---------------------------------------------------------"><label> याद्वारे घोषित करतो/ करते की, मी</label><br>
+            <label> रा. </label>
+            <input type="text" id="add" class="content" placeholder="---------------------------------------------------------">
+            <label> ता.</label><input type="text" id="tq" class="content" placeholder="---------------------------------------------------------"> 
+            <label> जि.</label><input type="text" id="dist" class="content" placeholder="---------------------------------------------------------">येथील रहिवासी असून या ठिकाणी खालील साक्षीदार समक्ष उपस्थित / हयात आहे .</p>
+            <p>&nbsp; &nbsp;&nbsp;&nbsp;वरील सर्व माहिती व समजुतीनुसार खरी आहे सदर माहिती खोटी आढळून  आल्यास  भारतीय 
+                दंड संहिता अन्वये  आणि / किंवा संबंधित कायद्यानुसार माझ्यावर  खटला  भरला जाईल व त्यानुसार 
+                मी शिक्षेस पात्र राहीन तसे स्वघोषणाद्वारे मिळालेले सर्व लाभ सर्वकषरित्या काढून घेण्यात येतील 
+                याची  मला पूर्ण जाणीव आहे करिता स्वघोषणापत्र लिहून देत आहे.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="signature">
+                <div class="sign">
+                <p>अर्जदाराचे स्वाक्षरी :</p>
+                <p>अर्जदाराचे नाव : _______________</p></div>
+
+                <p>ठिकाण : _________________</p>
+                <p>दिनांक : ___ / ___ / 20__</p>
+            </div>
+            <div class="witnesses">
+                <p>साक्षीदार :</p>
+                <p>1. ___________________</p>
+                <br>
+                <p>2. ___________________</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Base styles for mobile-first approach */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.contain {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container label {
+    margin-bottom: 5px;
+}
+
+.input-field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for larger screens */
+@media (min-width: 600px) {
+    .contain {
+        padding: 40px;
+    }
+
+    .input-field {
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for even larger screens, if needed */
+@media (min-width: 900px) {
+    .contain {
+        max-width: 700px;
+    }
+}
